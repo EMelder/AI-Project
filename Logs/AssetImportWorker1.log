@@ -1185,8 +1185,6 @@ Received Import Request.
 Start importing Packages/com.unity.ml-agents/Runtime/DecisionRequester.cs using Guid(3a5c9d521e5ef4759a8246a07d52221e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a891b091a41e014a5d20ab61b0335cf') in 0.000567 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
-<<<<<<< HEAD
-=======
 ========================================================================
 Received Import Request.
   Time since last request: 5850.232655 seconds.
@@ -1843,4 +1841,3 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
->>>>>>> 24aa1ad (Updating files)

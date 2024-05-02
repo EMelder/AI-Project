@@ -415,8 +415,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
-<<<<<<< HEAD
-=======
 --- !u!1 &597321463406227791
 GameObject:
   m_ObjectHideFlags: 0
@@ -500,7 +498,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
->>>>>>> 24aa1ad (Updating files)
 --- !u!1 &637817429643320462
 GameObject:
   m_ObjectHideFlags: 0
@@ -1122,11 +1119,7 @@ Transform:
   m_GameObject: {fileID: 1220133655762983223}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-<<<<<<< HEAD
-  m_LocalPosition: {x: 7.5, y: 0.5, z: 0}
-=======
   m_LocalPosition: {x: 13, y: 0.5, z: 0}
->>>>>>> 24aa1ad (Updating files)
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1203,11 +1196,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 0
     hasUpgradedBrainParametersWithActionSpec: 1
-<<<<<<< HEAD
-  m_Model: {fileID: 5022602860645237092, guid: b10cdd09f88e542e28a506a90bbf1cf1, type: 3}
-=======
   m_Model: {fileID: 0}
->>>>>>> 24aa1ad (Updating files)
   m_InferenceDevice: 2
   m_BehaviorType: 0
   m_BehaviorName: Goalie
@@ -1890,8 +1879,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
-<<<<<<< HEAD
-=======
 --- !u!1 &2550577441097543170
 GameObject:
   m_ObjectHideFlags: 0
@@ -2260,7 +2247,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
->>>>>>> 24aa1ad (Updating files)
 --- !u!1 &2967728953454734349
 GameObject:
   m_ObjectHideFlags: 0
@@ -2498,11 +2484,7 @@ GameObject:
   - component: {fileID: 9080253509586923073}
   m_Layer: 0
   m_Name: BlueGoalie
-<<<<<<< HEAD
-  m_TagString: purpleAgent
-=======
   m_TagString: blueAgent
->>>>>>> 24aa1ad (Updating files)
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2516,11 +2498,7 @@ Transform:
   m_GameObject: {fileID: 3118485513734689063}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-<<<<<<< HEAD
-  m_LocalPosition: {x: -7.5, y: 0.5, z: 0}
-=======
   m_LocalPosition: {x: -13, y: 0.5, z: 0}
->>>>>>> 24aa1ad (Updating files)
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2597,11 +2575,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 0
     hasUpgradedBrainParametersWithActionSpec: 1
-<<<<<<< HEAD
-  m_Model: {fileID: 5022602860645237092, guid: b10cdd09f88e542e28a506a90bbf1cf1, type: 3}
-=======
   m_Model: {fileID: 0}
->>>>>>> 24aa1ad (Updating files)
   m_InferenceDevice: 2
   m_BehaviorType: 0
   m_BehaviorName: Goalie
@@ -2643,20 +2617,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bb6b867a41448888c1cd4f99643ad71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
-  m_SensorName: PurpleGoalieRayPerceptionSensor
-=======
   m_SensorName: BlueGoalieRayPerceptionSensor
->>>>>>> 24aa1ad (Updating files)
   m_DetectableTags:
   - ball
   - purpleGoal
   - wall
   - blueAgent
-<<<<<<< HEAD
-=======
   - purpleAgent
->>>>>>> 24aa1ad (Updating files)
   m_RaysPerDirection: 20
   m_MaxRayDegrees: 180
   m_SphereCastRadius: 0.5
@@ -3037,8 +3004,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
-<<<<<<< HEAD
-=======
 --- !u!1 &3586953679859546421
 GameObject:
   m_ObjectHideFlags: 0
@@ -3122,7 +3087,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
->>>>>>> 24aa1ad (Updating files)
 --- !u!1 &3691723767282973238
 GameObject:
   m_ObjectHideFlags: 0
@@ -3482,8 +3446,6 @@ MonoBehaviour:
   rayMissColor: {r: 1, g: 1, b: 1, a: 1}
   m_StartVerticalOffset: 0.5
   m_EndVerticalOffset: 0.5
-<<<<<<< HEAD
-=======
 --- !u!1 &4146122826525962049
 GameObject:
   m_ObjectHideFlags: 0
@@ -3550,7 +3512,6 @@ MonoBehaviour:
   rayMissColor: {r: 1, g: 1, b: 1, a: 1}
   m_StartVerticalOffset: 0.5
   m_EndVerticalOffset: 0.5
->>>>>>> 24aa1ad (Updating files)
 --- !u!1 &4173570794664417060
 GameObject:
   m_ObjectHideFlags: 0
@@ -3634,8 +3595,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
-<<<<<<< HEAD
-=======
 --- !u!1 &4294948627574878726
 GameObject:
   m_ObjectHideFlags: 0
@@ -3921,7 +3880,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
->>>>>>> 24aa1ad (Updating files)
 --- !u!1 &4407365223484941089
 GameObject:
   m_ObjectHideFlags: 0
@@ -3957,13 +3915,9 @@ Transform:
   - {fileID: 775437884861251234}
   - {fileID: 8463141419411613994}
   - {fileID: 3259678248599985966}
-<<<<<<< HEAD
-  - {fileID: 1771785237400441419}
-=======
   - {fileID: 2094465634289758758}
   - {fileID: 1771785237400441419}
   - {fileID: 8757161474426029799}
->>>>>>> 24aa1ad (Updating files)
   - {fileID: 3139717341100134261}
   - {fileID: 2411015681922688121}
   - {fileID: 5831822250976219610}
@@ -3981,11 +3935,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e397bc3ae78c466a8d44400f5b68e38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
-  MaxEnvironmentSteps: 500
-=======
   MaxEnvironmentSteps: 5000
->>>>>>> 24aa1ad (Updating files)
   ball: {fileID: 7019522815339768009}
   ballRb: {fileID: 0}
   AgentsList:
@@ -4013,8 +3963,6 @@ MonoBehaviour:
     StartingPos: {x: 0, y: 0, z: 0}
     StartingRot: {x: 0, y: 0, z: 0, w: 0}
     Rb: {fileID: 0}
-<<<<<<< HEAD
-=======
   - Agent: {fileID: 4476777679789509062}
     StartingPos: {x: 0, y: 0, z: 0}
     StartingRot: {x: 0, y: 0, z: 0, w: 0}
@@ -4025,7 +3973,6 @@ MonoBehaviour:
     Rb: {fileID: 0}
   BlueScore: 0
   PurpleScore: 0
->>>>>>> 24aa1ad (Updating files)
 --- !u!1 &4521262267384860119
 GameObject:
   m_ObjectHideFlags: 0
@@ -4109,8 +4056,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
-<<<<<<< HEAD
-=======
 --- !u!1 &4547958136829713468
 GameObject:
   m_ObjectHideFlags: 0
@@ -4199,7 +4144,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
->>>>>>> 24aa1ad (Updating files)
 --- !u!1 &4690199022740881491
 GameObject:
   m_ObjectHideFlags: 0
@@ -4525,8 +4469,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
-<<<<<<< HEAD
-=======
 --- !u!1 &5219646746410290086
 GameObject:
   m_ObjectHideFlags: 0
@@ -4610,7 +4552,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
->>>>>>> 24aa1ad (Updating files)
 --- !u!1 &5245684702899984520
 GameObject:
   m_ObjectHideFlags: 0
@@ -4729,8 +4670,6 @@ Transform:
   - {fileID: 733084612813907547}
   m_Father: {fileID: 3713343173108327979}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
-=======
 --- !u!1 &5571619112267419021
 GameObject:
   m_ObjectHideFlags: 0
@@ -4814,7 +4753,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
->>>>>>> 24aa1ad (Updating files)
 --- !u!1 &5596473605329305580
 GameObject:
   m_ObjectHideFlags: 0
@@ -5296,8 +5234,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
-<<<<<<< HEAD
-=======
 --- !u!1 &6127636608806976428
 GameObject:
   m_ObjectHideFlags: 0
@@ -5381,7 +5317,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
->>>>>>> 24aa1ad (Updating files)
 --- !u!1 &6233715613938825396
 GameObject:
   m_ObjectHideFlags: 0
@@ -5492,17 +5427,10 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 0
     hasUpgradedBrainParametersWithActionSpec: 1
-<<<<<<< HEAD
-  m_Model: {fileID: 5022602860645237092, guid: 8cd4584c2f2cb4c5fb51675d364e10ec, type: 3}
-  m_InferenceDevice: 2
-  m_BehaviorType: 0
-  m_BehaviorName: SoccerTwos
-=======
   m_Model: {fileID: 0}
   m_InferenceDevice: 2
   m_BehaviorType: 0
   m_BehaviorName: Striker
->>>>>>> 24aa1ad (Updating files)
   TeamId: 1
   m_UseChildSensors: 1
   m_UseChildActuators: 1
@@ -5525,11 +5453,7 @@ MonoBehaviour:
   hasUpgradedFromAgentParameters: 1
   MaxStep: 0
   team: 0
-<<<<<<< HEAD
-  position: 2
-=======
   position: 0
->>>>>>> 24aa1ad (Updating files)
   agentRb: {fileID: 0}
   initialPos: {x: 0, y: 0, z: 0}
   rotSign: 0
@@ -5910,8 +5834,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
-<<<<<<< HEAD
-=======
 --- !u!1 &6959952732647680287
 GameObject:
   m_ObjectHideFlags: 0
@@ -5978,7 +5900,6 @@ MonoBehaviour:
   rayMissColor: {r: 1, g: 1, b: 1, a: 1}
   m_StartVerticalOffset: 0.5
   m_EndVerticalOffset: 0.5
->>>>>>> 24aa1ad (Updating files)
 --- !u!1 &6980807980358853306
 GameObject:
   m_ObjectHideFlags: 0
@@ -6327,17 +6248,10 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 0
     hasUpgradedBrainParametersWithActionSpec: 1
-<<<<<<< HEAD
-  m_Model: {fileID: 5022602860645237092, guid: 8cd4584c2f2cb4c5fb51675d364e10ec, type: 3}
-  m_InferenceDevice: 2
-  m_BehaviorType: 0
-  m_BehaviorName: SoccerTwos
-=======
   m_Model: {fileID: 0}
   m_InferenceDevice: 2
   m_BehaviorType: 0
   m_BehaviorName: Striker
->>>>>>> 24aa1ad (Updating files)
   TeamId: 0
   m_UseChildSensors: 1
   m_UseChildActuators: 1
@@ -6360,11 +6274,7 @@ MonoBehaviour:
   hasUpgradedFromAgentParameters: 1
   MaxStep: 0
   team: 1
-<<<<<<< HEAD
-  position: 2
-=======
   position: 0
->>>>>>> 24aa1ad (Updating files)
   agentRb: {fileID: 0}
   initialPos: {x: 0, y: 0, z: 0}
   rotSign: 0
@@ -6535,8 +6445,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 200, y: 50, z: 850.0001}
   m_Center: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
-=======
 --- !u!1 &7554801875091134507
 GameObject:
   m_ObjectHideFlags: 0
@@ -6625,7 +6533,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
->>>>>>> 24aa1ad (Updating files)
 --- !u!1 &7626400182748915365
 GameObject:
   m_ObjectHideFlags: 0
@@ -6736,17 +6643,10 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 0
     hasUpgradedBrainParametersWithActionSpec: 1
-<<<<<<< HEAD
-  m_Model: {fileID: 5022602860645237092, guid: 8cd4584c2f2cb4c5fb51675d364e10ec, type: 3}
-  m_InferenceDevice: 2
-  m_BehaviorType: 0
-  m_BehaviorName: SoccerTwos
-=======
   m_Model: {fileID: 0}
   m_InferenceDevice: 2
   m_BehaviorType: 0
   m_BehaviorName: Striker
->>>>>>> 24aa1ad (Updating files)
   TeamId: 0
   m_UseChildSensors: 1
   m_UseChildActuators: 1
@@ -6769,11 +6669,7 @@ MonoBehaviour:
   hasUpgradedFromAgentParameters: 1
   MaxStep: 0
   team: 1
-<<<<<<< HEAD
-  position: 2
-=======
   position: 0
->>>>>>> 24aa1ad (Updating files)
   agentRb: {fileID: 0}
   initialPos: {x: 0, y: 0, z: 0}
   rotSign: 0
@@ -6839,8 +6735,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   debugCommandLineOverride: 
-<<<<<<< HEAD
-=======
 --- !u!1 &7628710782391040508
 GameObject:
   m_ObjectHideFlags: 0
@@ -6924,7 +6818,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
->>>>>>> 24aa1ad (Updating files)
 --- !u!1 &7844254668197729079
 GameObject:
   m_ObjectHideFlags: 0
@@ -7035,17 +6928,10 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 0
     hasUpgradedBrainParametersWithActionSpec: 1
-<<<<<<< HEAD
-  m_Model: {fileID: 5022602860645237092, guid: 8cd4584c2f2cb4c5fb51675d364e10ec, type: 3}
-  m_InferenceDevice: 2
-  m_BehaviorType: 0
-  m_BehaviorName: SoccerTwos
-=======
   m_Model: {fileID: 0}
   m_InferenceDevice: 2
   m_BehaviorType: 0
   m_BehaviorName: Striker
->>>>>>> 24aa1ad (Updating files)
   TeamId: 1
   m_UseChildSensors: 1
   m_UseChildActuators: 1
@@ -7068,11 +6954,7 @@ MonoBehaviour:
   hasUpgradedFromAgentParameters: 1
   MaxStep: 0
   team: 0
-<<<<<<< HEAD
-  position: 2
-=======
   position: 0
->>>>>>> 24aa1ad (Updating files)
   agentRb: {fileID: 0}
   initialPos: {x: 0, y: 0, z: 0}
   rotSign: 0
@@ -7440,8 +7322,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
-<<<<<<< HEAD
-=======
 --- !u!1 &8003534811867943562
 GameObject:
   m_ObjectHideFlags: 0
@@ -7525,7 +7405,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
->>>>>>> 24aa1ad (Updating files)
 --- !u!1 &8076396157519945402
 GameObject:
   m_ObjectHideFlags: 0
