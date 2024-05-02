@@ -23,7 +23,11 @@ public class AgentSoccer : Agent
     {
         Striker,
         Goalie,
+<<<<<<< HEAD
         Generic
+=======
+        Midfielder
+>>>>>>> 24aa1ad (Updating files)
     }
 
     [HideInInspector]
@@ -85,7 +89,11 @@ public class AgentSoccer : Agent
         }
         else
         {
+<<<<<<< HEAD
             m_LateralSpeed = 0.3f;
+=======
+            m_LateralSpeed = 0.5f;
+>>>>>>> 24aa1ad (Updating files)
             m_ForwardSpeed = 1.0f;
         }
         m_SoccerSettings = FindObjectOfType<SoccerSettings>();

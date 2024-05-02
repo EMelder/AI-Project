@@ -46,6 +46,11 @@ public class SoccerEnvController : MonoBehaviour
     private SimpleMultiAgentGroup m_PurpleAgentGroup;
 
     private int m_ResetTimer;
+<<<<<<< HEAD
+=======
+    public int BlueScore;
+    public int PurpleScore;
+>>>>>>> 24aa1ad (Updating files)
 
     void Start()
     {
@@ -100,17 +105,36 @@ public class SoccerEnvController : MonoBehaviour
     {
         if (scoredTeam == Team.Blue)
         {
+<<<<<<< HEAD
+=======
+            Debug.Log("Blue Team scored!\n");
+            BlueScore++;
+            Debug.Log("Score (" + BlueScore.ToString() + ")B v. (" + PurpleScore.ToString() + ")P\n");
+>>>>>>> 24aa1ad (Updating files)
             m_BlueAgentGroup.AddGroupReward(1 - (float)m_ResetTimer / MaxEnvironmentSteps);
             m_PurpleAgentGroup.AddGroupReward(-1);
         }
         else
         {
+<<<<<<< HEAD
             m_PurpleAgentGroup.AddGroupReward(1 - (float)m_ResetTimer / MaxEnvironmentSteps);
             m_BlueAgentGroup.AddGroupReward(-1);
         }
         m_PurpleAgentGroup.EndGroupEpisode();
         m_BlueAgentGroup.EndGroupEpisode();
         ResetScene();
+=======
+
+            Debug.Log("Purple Team scored!\n");
+            PurpleScore++;
+            Debug.Log("Score (" + BlueScore.ToString() + ")B v. (" + PurpleScore.ToString() + ")P\n");
+            m_PurpleAgentGroup.AddGroupReward(1 - (float)m_ResetTimer / MaxEnvironmentSteps);
+            m_BlueAgentGroup.AddGroupReward(-1);
+        }
+        //m_PurpleAgentGroup.EndGroupEpisode();
+        //m_BlueAgentGroup.EndGroupEpisode();
+        //ResetScene();
+>>>>>>> 24aa1ad (Updating files)
 
     }
 
@@ -131,7 +155,13 @@ public class SoccerEnvController : MonoBehaviour
             item.Rb.velocity = Vector3.zero;
             item.Rb.angularVelocity = Vector3.zero;
         }
+<<<<<<< HEAD
 
+=======
+        //Reset Score
+        BlueScore = 0;
+        PurpleScore = 0;
+>>>>>>> 24aa1ad (Updating files)
         //Reset Ball
         ResetBall();
     }
