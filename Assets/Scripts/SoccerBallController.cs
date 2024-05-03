@@ -11,7 +11,8 @@ public class SoccerBallController : MonoBehaviour
     public string blueGoalTag; //will be used to check if collided with blue goal
     public string purpleAgentTag;
     public string blueAgentTag;
-    GameObject LastKick;
+    [HideInInspector]
+    public GameObject LastKick;
 
     void Start()
     {
@@ -28,11 +29,19 @@ public class SoccerBallController : MonoBehaviour
         {
             envController.GoalTouched(Team.Purple);
         }
-        else if (col.gameObject.CompareTag(purpleAgentTag) || col.gameObject.CompareTag(blueAgentTag))
+        else if (col.gameObject.CompareTag(purpleAgentTag))
         {
             if (LastKick != null && LastKick.CompareTag(col.gameObject.tag))
             {
-                envController.GiveReward(LastKick)
+                Debug.Log("There was a pass between Purple\n");
+            }
+            LastKick = col.gameObject.GetComponent<GameObject>();
+        }
+        else if (col.gameObject.CompareTag(blueAgentTag))
+        {
+            if (LastKick != null && LastKick.CompareTag(col.gameObject.tag))
+            {
+                Debug.Log("There was a pass between Blue\n");
             }
             LastKick = col.gameObject.GetComponent<GameObject>();
         }

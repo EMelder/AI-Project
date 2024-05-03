@@ -1,0 +1,73 @@
+{
+    "Goalie": {
+        "checkpoints": [
+            {
+                "steps": 3072,
+                "file_path": "results\\Test3\\Goalie\\Goalie-3072.onnx",
+                "reward": null,
+                "creation_time": 1714716787.9682012,
+                "auxillary_file_paths": [
+                    "results\\Test3\\Goalie\\Goalie-3072.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 3072,
+            "file_path": "results\\Test3\\Goalie.onnx",
+            "reward": null,
+            "creation_time": 1714716787.9682012,
+            "auxillary_file_paths": [
+                "results\\Test3\\Goalie\\Goalie-3072.pt"
+            ]
+        }
+    },
+    "Midfielder": {
+        "checkpoints": [
+            {
+                "steps": 3072,
+                "file_path": "results\\Test3\\Midfielder\\Midfielder-3072.onnx",
+                "reward": null,
+                "creation_time": 1714716788.0931149,
+                "auxillary_file_paths": [
+                    "results\\Test3\\Midfielder\\Midfielder-3072.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 3072,
+            "file_path": "results\\Test3\\Midfielder.onnx",
+            "reward": null,
+            "creation_time": 1714716788.0931149,
+            "auxillary_file_paths": [
+                "results\\Test3\\Midfielder\\Midfielder-3072.pt"
+            ]
+        }
+    },
+    "Striker": {
+        "checkpoints": [
+            {
+                "steps": 6144,
+                "file_path": "results\\Test3\\Striker\\Striker-6144.onnx",
+                "reward": null,
+                "creation_time": 1714716788.222532,
+                "auxillary_file_paths": [
+                    "results\\Test3\\Striker\\Striker-6144.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 6144,
+            "file_path": "results\\Test3\\Striker.onnx",
+            "reward": null,
+            "creation_time": 1714716788.222532,
+            "auxillary_file_paths": [
+                "results\\Test3\\Striker\\Striker-6144.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.1.0.dev0",
+        "torch_version": "2.3.0+cpu"
+    }
+}

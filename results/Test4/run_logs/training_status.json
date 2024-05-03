@@ -1,0 +1,73 @@
+{
+    "Midfielder": {
+        "checkpoints": [
+            {
+                "steps": 126144,
+                "file_path": "results\\Test4\\Midfielder\\Midfielder-126144.onnx",
+                "reward": null,
+                "creation_time": 1714717798.6650026,
+                "auxillary_file_paths": [
+                    "results\\Test4\\Midfielder\\Midfielder-126144.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 126144,
+            "file_path": "results\\Test4\\Midfielder.onnx",
+            "reward": null,
+            "creation_time": 1714717798.6650026,
+            "auxillary_file_paths": [
+                "results\\Test4\\Midfielder\\Midfielder-126144.pt"
+            ]
+        }
+    },
+    "Goalie": {
+        "checkpoints": [
+            {
+                "steps": 126144,
+                "file_path": "results\\Test4\\Goalie\\Goalie-126144.onnx",
+                "reward": null,
+                "creation_time": 1714717798.781785,
+                "auxillary_file_paths": [
+                    "results\\Test4\\Goalie\\Goalie-126144.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 126144,
+            "file_path": "results\\Test4\\Goalie.onnx",
+            "reward": null,
+            "creation_time": 1714717798.781785,
+            "auxillary_file_paths": [
+                "results\\Test4\\Goalie\\Goalie-126144.pt"
+            ]
+        }
+    },
+    "Striker": {
+        "checkpoints": [
+            {
+                "steps": 252288,
+                "file_path": "results\\Test4\\Striker\\Striker-252288.onnx",
+                "reward": null,
+                "creation_time": 1714717798.8906217,
+                "auxillary_file_paths": [
+                    "results\\Test4\\Striker\\Striker-252288.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 252288,
+            "file_path": "results\\Test4\\Striker.onnx",
+            "reward": null,
+            "creation_time": 1714717798.8906217,
+            "auxillary_file_paths": [
+                "results\\Test4\\Striker\\Striker-252288.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.1.0.dev0",
+        "torch_version": "2.3.0+cpu"
+    }
+}

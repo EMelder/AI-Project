@@ -140,8 +140,8 @@ public class SoccerEnvController : MonoBehaviour
         {
             Debug.Log("Blue Team scored!\n");
             BlueScore++;
-            Debug.Log("Score (" + BlueScore.ToString() + ")B v. (" + PurpleScore.ToString() + ")P\n");
-            m_BlueAgentGroup.AddGroupReward(1 - (float)m_ResetTimer / MaxEnvironmentSteps);
+            Debug.Log("Score: (" + BlueScore.ToString() + ")B v. (" + PurpleScore.ToString() + ")P\n");
+            m_BlueAgentGroup.AddGroupReward(1);
             m_PurpleAgentGroup.AddGroupReward(-1);
         }
         else
@@ -149,25 +149,20 @@ public class SoccerEnvController : MonoBehaviour
 
             Debug.Log("Purple Team scored!\n");
             PurpleScore++;
-            Debug.Log("Score (" + BlueScore.ToString() + ")B v. (" + PurpleScore.ToString() + ")P\n");
-            m_PurpleAgentGroup.AddGroupReward(1 - (float)m_ResetTimer / MaxEnvironmentSteps);
+            Debug.Log("Score: (" + BlueScore.ToString() + ")B v. (" + PurpleScore.ToString() + ")P\n");
+            m_PurpleAgentGroup.AddGroupReward(1);
             m_BlueAgentGroup.AddGroupReward(-1);
         }
         //m_PurpleAgentGroup.EndGroupEpisode();
         //m_BlueAgentGroup.EndGroupEpisode();
         //ResetScene();
+        ResetBall();
 
     }
 
-    public void GiveReward(AgentSoccer agent)
+    public void GiveReward()
     {
-        foreach (var item in AgentsList)
-        {
-            if(item.Agent == agent)
-            {
-                Debug.Log("Found input agent in AgentsList\n");
-            }
-        }
+        
     }
 
 
@@ -178,7 +173,7 @@ public class SoccerEnvController : MonoBehaviour
         //Reset Agents
         foreach (var item in AgentsList)
         {
-            var randomPosX = Random.Range(-5f, 5f);
+            var randomPosX = Random.Range(-2f, 2f);
             var newStartPos = item.Agent.initialPos + new Vector3(randomPosX, 0f, 0f);
             var rot = item.Agent.rotSign * Random.Range(80.0f, 100.0f);
             var newRot = Quaternion.Euler(0, rot, 0);

@@ -32,6 +32,7 @@ public class AgentSoccer : Agent
     // The coefficient for the reward for colliding with a ball. Set using curriculum.
     float m_BallTouch;
     public Position position;
+    public GameObject self;
 
     const float k_Power = 2000f;
     float m_Existential;
@@ -47,13 +48,14 @@ public class AgentSoccer : Agent
     public float rotSign;
 
     EnvironmentParameters m_ResetParams;
+    SoccerEnvController envController;
 
     public override void Initialize()
     {
-        SoccerEnvController envController = GetComponentInParent<SoccerEnvController>();
+        envController = GetComponentInParent<SoccerEnvController>();
         if (envController != null)
         {
-            m_Existential = 1f / envController.MaxEnvironmentSteps;
+            m_Existential = 10f / envController.MaxEnvironmentSteps;
         }
         else
         {
@@ -64,13 +66,13 @@ public class AgentSoccer : Agent
         if (m_BehaviorParameters.TeamId == (int)Team.Blue)
         {
             team = Team.Blue;
-            initialPos = new Vector3(transform.position.x - 5f, .5f, transform.position.z);
+            initialPos = new Vector3(transform.position.x, transform.position.y, transform.position.z);
             rotSign = 1f;
         }
         else
         {
             team = Team.Purple;
-            initialPos = new Vector3(transform.position.x + 5f, .5f, transform.position.z);
+            initialPos = new Vector3(transform.position.x, transform.position.y, transform.position.z);
             rotSign = -1f;
         }
         if (position == Position.Goalie)
@@ -145,16 +147,63 @@ public class AgentSoccer : Agent
     public override void OnActionReceived(ActionBuffers actionBuffers)
 
     {
-
-        if (position == Position.Goalie)
+        if (team == Team.Blue)
         {
-            // Existential bonus for Goalies.
-            AddReward(m_Existential);
+            if (position == Position.Goalie)
+            {
+                if (transform.position.x > -7.5f)
+                {
+                    AddReward(-m_Existential);
+                }
+                
+            }
+            else if (position == Position.Striker)
+            {
+                if(transform.position.x > 0 && envController.ball.transform.position.x > 0)
+                {
+                    AddReward(m_Existential);
+                }
+            }
+            else
+            {
+                if(transform.position.x > 0 && envController.ball.transform.position.x > 0)
+                {
+                    AddReward(0.5f * m_Existential);
+                }
+                if (transform.position.x > 0 && envController.ball.transform.position.x < 0)
+                {
+                    AddReward(-0.5f * m_Existential);
+                }
+            }
         }
-        else if (position == Position.Striker)
+        if (team == Team.Purple)
         {
-            // Existential penalty for Strikers
-            AddReward(-m_Existential);
+            if (position == Position.Goalie)
+            {
+                if (transform.position.x < 7.5f)
+                {
+                    AddReward(-m_Existential);
+                }
+                
+            }
+            else if (position == Position.Striker)
+            {
+                if (transform.position.x < 0 && envController.ball.transform.position.x < 0)
+                {
+                    AddReward(m_Existential);
+                }
+            }
+            else
+            {
+                if (transform.position.x < 0 && envController.ball.transform.position.x < 0)
+                {
+                    AddReward(0.5f * m_Existential);
+                }
+                if (transform.position.x < 0 && envController.ball.transform.position.x > 0)
+                {
+                    AddReward(-0.5f * m_Existential);
+                }
+            }
         }
         MoveAgent(actionBuffers.DiscreteActions);
     }
@@ -202,7 +251,11 @@ public class AgentSoccer : Agent
         }
         if (c.gameObject.CompareTag("ball"))
         {
-            AddReward(.2f * m_BallTouch);
+            AddReward(.4f * m_BallTouch);
+            if (c.gameObject.GetComponent<SoccerBallController>().LastKick != null && team == Team.Blue && c.gameObject.GetComponent<SoccerBallController>().LastKick.name != self.name)
+            {
+                
+            }
             var dir = c.contacts[0].point - transform.position;
             dir = dir.normalized;
             c.gameObject.GetComponent<Rigidbody>().AddForce(dir * force);
