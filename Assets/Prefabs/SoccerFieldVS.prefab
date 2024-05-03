@@ -3936,6 +3936,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxEnvironmentSteps: 5000
+  paradime: 0
   ball: {fileID: 7019522815339768009}
   ballRb: {fileID: 0}
   AgentsList:
@@ -6107,10 +6108,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93558b952b37a4b0ebaca3ca6711bcc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  area: {fileID: 0}
+  area: {fileID: 4407365223484941089}
   envController: {fileID: 0}
   purpleGoalTag: purpleGoal
   blueGoalTag: blueGoal
+  purpleAgentTag: purpleAgent
+  blueAgentTag: blueAgent
 --- !u!54 &2555725365953446763
 Rigidbody:
   m_ObjectHideFlags: 0

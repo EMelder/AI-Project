@@ -17,6 +17,15 @@ public class SoccerEnvController : MonoBehaviour
     }
 
 
+    public enum Paradime
+    {
+        Marginal,
+        Bulk,
+        Hybrid
+    }
+
+
+
     /// <summary>
     /// Max Academy steps before this platform resets
     /// </summary>
@@ -30,6 +39,8 @@ public class SoccerEnvController : MonoBehaviour
     /// <summary>
     /// We will be changing the ground material based on success/failue
     /// </summary>
+
+    public Paradime paradime;
 
     public GameObject ball;
     [HideInInspector]
@@ -80,6 +91,30 @@ public class SoccerEnvController : MonoBehaviour
         m_ResetTimer += 1;
         if (m_ResetTimer >= MaxEnvironmentSteps && MaxEnvironmentSteps > 0)
         {
+            if(BlueScore-PurpleScore > 0)
+            {
+                Debug.Log("Blue wins with score of " + BlueScore.ToString() + " vs. " + PurpleScore.ToString() + "\n");
+            }
+            else if(BlueScore-PurpleScore< 0)
+            {
+                Debug.Log("Purple wins with score of "+ BlueScore.ToString() + " vs. " + PurpleScore.ToString() + "\n");
+            }
+            if (paradime == Paradime.Bulk)
+            {
+                m_BlueAgentGroup.AddGroupReward(BlueScore - PurpleScore);
+                m_PurpleAgentGroup.AddGroupReward(-(BlueScore - PurpleScore));
+            }
+            else if (paradime == Paradime.Hybrid)
+            {
+                m_BlueAgentGroup.AddGroupReward(0.5f * (BlueScore - PurpleScore));
+                m_PurpleAgentGroup.AddGroupReward(-0.5f * (BlueScore - PurpleScore));
+            }
+            else if (paradime == Paradime.Marginal)
+            {
+                m_BlueAgentGroup.AddGroupReward(0.1f * (BlueScore - PurpleScore));
+                m_PurpleAgentGroup.AddGroupReward(-0.1f * (BlueScore - PurpleScore));
+            }
+
             m_BlueAgentGroup.GroupEpisodeInterrupted();
             m_PurpleAgentGroup.GroupEpisodeInterrupted();
             ResetScene();
@@ -89,6 +124,7 @@ public class SoccerEnvController : MonoBehaviour
 
     public void ResetBall()
     {
+
         var randomPosX = Random.Range(-2.5f, 2.5f);
         var randomPosZ = Random.Range(-2.5f, 2.5f);
 
@@ -123,6 +159,17 @@ public class SoccerEnvController : MonoBehaviour
 
     }
 
+    public void GiveReward(AgentSoccer agent)
+    {
+        foreach (var item in AgentsList)
+        {
+            if(item.Agent == agent)
+            {
+                Debug.Log("Found input agent in AgentsList\n");
+            }
+        }
+    }
+
 
     public void ResetScene()
     {
@@ -145,5 +192,10 @@ public class SoccerEnvController : MonoBehaviour
         PurpleScore = 0;
         //Reset Ball
         ResetBall();
+    }
+
+    public Paradime GetParadime()
+    {
+        return paradime;
     }
 }
