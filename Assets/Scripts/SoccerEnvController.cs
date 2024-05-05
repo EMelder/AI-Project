@@ -57,6 +57,7 @@ public class SoccerEnvController : MonoBehaviour
     private SimpleMultiAgentGroup m_PurpleAgentGroup;
 
     private int m_ResetTimer;
+    public float KickReward = 0.1f;
     public int BlueScore;
     public int PurpleScore;
 
@@ -83,7 +84,7 @@ public class SoccerEnvController : MonoBehaviour
                 m_PurpleAgentGroup.RegisterAgent(item.Agent);
             }
         }
-        ResetScene();
+        //ResetScene();
     }
 
     void FixedUpdate()

@@ -55,7 +55,7 @@ public class AgentSoccer : Agent
         envController = GetComponentInParent<SoccerEnvController>();
         if (envController != null)
         {
-            m_Existential = 10f / envController.MaxEnvironmentSteps;
+            m_Existential = 1f / envController.MaxEnvironmentSteps;
         }
         else
         {
@@ -151,11 +151,15 @@ public class AgentSoccer : Agent
         {
             if (position == Position.Goalie)
             {
-                if (transform.position.x > -7.5f)
+                if (transform.position.x > -5f)
                 {
-                    AddReward(-m_Existential);
+                    AddReward(-0.25f*m_Existential);
                 }
-                
+                if (transform.position.x < -5f)
+                {
+                    AddReward(0.1f * m_Existential);
+                }
+
             }
             else if (position == Position.Striker)
             {
@@ -180,11 +184,15 @@ public class AgentSoccer : Agent
         {
             if (position == Position.Goalie)
             {
-                if (transform.position.x < 7.5f)
+                if (transform.position.x < 5f)
                 {
-                    AddReward(-m_Existential);
+                    AddReward(-0.25f*m_Existential);
                 }
-                
+                if (transform.position.x < 5f)
+                {
+                    AddReward(0.1f*m_Existential);
+                }
+
             }
             else if (position == Position.Striker)
             {
@@ -251,10 +259,10 @@ public class AgentSoccer : Agent
         }
         if (c.gameObject.CompareTag("ball"))
         {
-            AddReward(.4f * m_BallTouch);
-            if (c.gameObject.GetComponent<SoccerBallController>().LastKick != null && team == Team.Blue && c.gameObject.GetComponent<SoccerBallController>().LastKick.name != self.name)
+            AddReward(m_BallTouch);
+            if (c.gameObject.GetComponent<SoccerBallController>().LastKick != null && c.gameObject.GetComponent<SoccerBallController>().LastKick.GetComponent<AgentSoccer>().team == team && c.gameObject.GetComponent<SoccerBallController>().LastKick.name != self.name)
             {
-                
+                //Passing reward?
             }
             var dir = c.contacts[0].point - transform.position;
             dir = dir.normalized;
@@ -264,7 +272,7 @@ public class AgentSoccer : Agent
 
     public override void OnEpisodeBegin()
     {
-        m_BallTouch = m_ResetParams.GetWithDefault("ball_touch", 0);
+        m_BallTouch = envController.KickReward;
     }
 
 }

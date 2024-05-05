@@ -1,0 +1,76 @@
+{
+    "Midfielder": {
+        "elo": 1200.0,
+        "checkpoints": [
+            {
+                "steps": 150000,
+                "file_path": "results\\Test6\\Midfielder\\Midfielder-150000.onnx",
+                "reward": 2.0735000371932983,
+                "creation_time": 1714862396.415006,
+                "auxillary_file_paths": [
+                    "results\\Test6\\Midfielder\\Midfielder-150000.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 150000,
+            "file_path": "results\\Test6\\Midfielder.onnx",
+            "reward": 2.0735000371932983,
+            "creation_time": 1714862396.415006,
+            "auxillary_file_paths": [
+                "results\\Test6\\Midfielder\\Midfielder-150000.pt"
+            ]
+        }
+    },
+    "Goalie": {
+        "elo": 1200.0,
+        "checkpoints": [
+            {
+                "steps": 150000,
+                "file_path": "results\\Test6\\Goalie\\Goalie-150000.onnx",
+                "reward": -5.02033340682586,
+                "creation_time": 1714862396.5813625,
+                "auxillary_file_paths": [
+                    "results\\Test6\\Goalie\\Goalie-150000.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 150000,
+            "file_path": "results\\Test6\\Goalie.onnx",
+            "reward": -5.02033340682586,
+            "creation_time": 1714862396.5813625,
+            "auxillary_file_paths": [
+                "results\\Test6\\Goalie\\Goalie-150000.pt"
+            ]
+        }
+    },
+    "Striker": {
+        "elo": 1200.0,
+        "checkpoints": [
+            {
+                "steps": 300000,
+                "file_path": "results\\Test6\\Striker\\Striker-300000.onnx",
+                "reward": 4.999000072479248,
+                "creation_time": 1714862396.7185915,
+                "auxillary_file_paths": [
+                    "results\\Test6\\Striker\\Striker-300000.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 300000,
+            "file_path": "results\\Test6\\Striker.onnx",
+            "reward": 4.999000072479248,
+            "creation_time": 1714862396.7185915,
+            "auxillary_file_paths": [
+                "results\\Test6\\Striker\\Striker-300000.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.1.0.dev0",
+        "torch_version": "2.3.0+cpu"
+    }
+}

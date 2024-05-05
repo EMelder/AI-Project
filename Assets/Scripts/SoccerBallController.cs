@@ -31,17 +31,21 @@ public class SoccerBallController : MonoBehaviour
         }
         else if (col.gameObject.CompareTag(purpleAgentTag))
         {
-            if (LastKick != null && LastKick.CompareTag(col.gameObject.tag))
+            if (LastKick != null && LastKick.CompareTag(col.gameObject.tag) && LastKick.name != col.gameObject.name)
             {
                 Debug.Log("There was a pass between Purple\n");
+                col.gameObject.GetComponent<AgentSoccer>().AddReward(0.2f);
+                LastKick.GetComponent<AgentSoccer>().AddReward(0.2f);
             }
             LastKick = col.gameObject.GetComponent<GameObject>();
         }
         else if (col.gameObject.CompareTag(blueAgentTag))
         {
-            if (LastKick != null && LastKick.CompareTag(col.gameObject.tag))
+            if (LastKick != null && LastKick.CompareTag(col.gameObject.tag) && LastKick.name != col.gameObject.name)
             {
                 Debug.Log("There was a pass between Blue\n");
+                col.gameObject.GetComponent<AgentSoccer>().AddReward(0.2f);
+                LastKick.GetComponent<AgentSoccer>().AddReward(0.2f);
             }
             LastKick = col.gameObject.GetComponent<GameObject>();
         }
